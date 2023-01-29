@@ -15,7 +15,7 @@ a {
 
 .Portfolio {
   background-color: black;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow-x: hidden;
 }
@@ -47,8 +47,8 @@ a {
     )
     center;
   background-size: 125%;
-  animation: fadeIn 5s linear 1s, breathe 8s ease 7s infinite;
-  animation-fill-mode: forwards;
+  animation: fadeIn 5s linear 1s backwards,
+    breathe 8s ease-in-out 6s infinite forwards;
 }
 
 .Portfolio_content {
