@@ -10,8 +10,8 @@ function pages() {
         <div className="Portfolio_summary">
           <p>Hello there! My name is Luke and I'm a software Engineer.</p>
           <p>
-            I'm currently working at Huel as a Frontend Engineer and working on
-            personal projects in my spare time
+            I'm currently working at Huel as a Senior Frontend Engineer and
+            working on personal projects in my spare time.
           </p>
         </div>
         <div className="Portfolio_links">
