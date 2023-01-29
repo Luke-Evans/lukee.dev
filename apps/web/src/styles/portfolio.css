@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Unbounded", "Roboto", "Helvetica", "Arial", "sans-serif";
+}
+
+p {
+  margin: 0.5rem;
+}
+
+a {
+  color: white;
+}
+
+.Portfolio {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.Portfolio_left-gradient {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(35, 86, 223, 1) 69%,
+      rgba(35, 175, 223, 1) 91%
+    )
+    center;
+  background-size: 125%;
+  animation: fadeIn 5s linear 1s, breathe 8s ease 7s infinite;
+  animation-fill-mode: forwards;
+}
+
+.Portfolio_content {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  color: white;
+  z-index: 2;
+  position: relative;
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 1440px;
+  padding: 2rem;
+  margin: 5rem auto;
+}
+
+.Portfolio_title {
+  width: fit-content;
+  font-size: 23rem;
+  margin: 0;
+  opacity: 1;
+  font-size: clamp(4.5rem, -1.485294117647058rem + 27.205882352941174vw, 23rem);
+}
+
+.Portfolio_summary {
+  width: 50%;
+}
+
+@media screen and (max-width: 660px) {
+  .Portfolio_summary {
+    width: auto;
+  }
+
+  .Portfolio_content {
+    width: auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+  }
+}
+
+.Portfolio_links {
+  margin-top: 30px;
+  font-size: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.Portfolio_links-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.Portfolio_link-text {
+  color: gray;
+  text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes breathe {
+  0% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
