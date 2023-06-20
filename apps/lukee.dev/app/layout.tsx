@@ -1,5 +1,6 @@
 import { Metadata } from 'next/types';
 import { Unbounded } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 import './global.css';
 
 export const runtime = 'edge';
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={unbounded.className}>
       <body>{children}</body>
+      <Analytics />
     </html>
   );
 }
